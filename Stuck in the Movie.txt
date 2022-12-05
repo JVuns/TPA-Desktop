@@ -1,0 +1,129 @@
+TPA initial
+Start -> November 17 
+End -> Desember 5
+
+Diagram - Program biasa 50-50/60-40
+Diagram harus sesuai dengan program atau gk bakal dapat nilai.
+
+note: Baca soal teliti, ie: Manager bisa di tempat lain kan ya jadi access rolenya diakses
+ 
+MANAGER
+
+Cashflow Revenue:
+	- Can view ticket sales, food orders, beverage orders, advertisements, partnerships
+
+Cashflow Expense:
+	- Can view facility improvement, maintenance, electricity, staff wage, taxes, etc
+
+Movie Schedule - Schedule Data:
+	- Can view Schedule Delays, Comparison between the number of tickets sold, Number of attendees
+
+Misc
+	- Can view facilities and equipment 
+
+Membership
+	- Can view Membership (Buat informasi tentang membership dan jenis membership yang paling hot)
+
+Employee 
+Can view:
+	- Employee (Name, DOB, Contract, [Resigning (time, eligibility)], Letter of complaint, Salary, Date Joined)
+	- Accept Warning Letter Imposement Request
+
+HRD
+
+Employee 
+	- Job description
+	- Contact information
+	- Warning letter
+	- Salary
+	- Personal leave
+	- Working time
+	- Attendance Report*
+
+Recruitment 
+	- Registration
+	- Candidate Selection
+	- Technical Test
+	- Interview
+	- Meeting
+	- Accepted (Starting day)*
+	- Warning Letter Imposement -> Manager (Approve Letter Imposement Request)
+
+Salary Adjustment
+	- Change Salary -> Manager (Approve Salary Change) -> Accounting and Finance Department (Process Data)
+
+Working Time
+	- Setting the Working Time
+	- Employee at Beginning of Each Month -> HRD (Accept Working Time Request)
+	- Attendance Visualization
+	- Employee -> (Personal Leave Request) -> HRD(Accept Request) 
+
+ACCOUNTING AND FINANCE DEPARTMENT
+Cash Flow
+	- Any Deparment(Request Fund) -> Accounting & Manager(Accept/Reject/Revise Request) -> Any Deparment(Return Notification)
+	- Any Department(Request Item) -> Accounting(Approve) -> Storage Department(Purchase)
+	- Calculating Taxes [Read: rticle 58 Paragraph (1) Law Number 1 of 2022 concerning Financial Relations between the Central Government and Regional Government.]
+
+STORATE DEPARTMENT
+	- Storage Department(Label Facility and Equipment) -> {Date, Department/Location/Taken By/Date Taken/Label ID}
+	- Any Department(Request Item) -> Storage Department(Purchase) -> Storage Department(Calculate Shortage/Excess Fund) -> Accounting(Store Accountability)
+	- Employee(Report Broken Equipment) -> Storage Department(Check and Fix) -> Storage Department(Notify if can be Fixed or Not)
+
+EXTERNAL DEPARTMENT 
+	- Outsider(Send Message) -> External(Recieve Message [Summary + Recording/Documentation] ) -> Manager can see this.
+	- External Sub:  
+		Movie Produces -> Know about movie details (Title, Duration, Genre, Date, Actror)
+		Food and Beverage -> Find supplier for movie cafe 
+			Food(Request additionall supplies) -> Accounting(Approve)
+		Advertising Partner -> Ads recieve advertisement request with details (company, type, duration, idea, period(if ending, will send report such as view, many times played etc) )
+
+PROMOTION AND EVENT DEPARTMENT - PENDING
+	- Create promo and event, 
+	- View Membership -> Notify Membership about promo & event
+	- Generate Voucher that can be automatically applied for the cashier
+
+MOVIE DEPARTMENT - PENDING
+	Schedule Division
+	- Scheduling Movie in Contract with the theatre - Movie Placement Subs
+	- Auto generate schedule of movies, but can be edited - Movie Placement Subs
+	
+	Front Office Division
+	- Serve customer (Movie transaction, Payment method etc)
+	- Print ticket - Payment Subs
+	- ask for Membership Card, this division can create one for customer - [Todo] Subs
+	- if payment succeed add one point to the customer membership - [Todo] Subs
+	- once milestone complete use the point - [Todo] Subs
+
+	Operation Division
+	- Preparing theatre room (Guiding out customer + dispose their garbage) - Domain
+	- Clean the rooms - Domain
+	- Check movie that would be played - Theatre Operational Subs
+	- Choose ads to be shown - Advertisement Subs
+	- Check Projector - Domain
+	- Must stand by 20 minutes before movie end - Domain
+	- Open theatre door and check customer ticket - Theatre Operational Subs (Assuming using QR to check customer ticket)
+
+CAFE DEPARTMENT - DONE
+	Front Office Division
+	- Serving customer who want to buy snacks and drinks - Domain
+	- Ask the drink/food customer want to buy from menu - Domain
+ 
+	- Payment Method (cash/digital wallet) - Payment Subs
+	- Print Receipt - Payment Subs
+	- Forward to kitched division - Cafetaria Subs
+	- Customer can check order from Front Office Department Screen - Domain
+	- Customer can pick up food when ready - Domain
+
+	Kitchen Division
+	- Make foods/beverages from Front Office Division - Domain
+	- Ordered by the time of customer order the food - Cafetaria Subs
+	- Change status from ordered to processed - Cafetaria Subs
+	- Change status from processed to ready - Cafetaria Subs
+
+Administrator  Department
+	- Access the system
+	- Manage menu can be accessed by each department
+	- Reset employee password (Make it secured)
+
+
+	
