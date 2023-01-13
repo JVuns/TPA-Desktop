@@ -10,16 +10,10 @@ function createWindow () {
     }
   })
 
-  //load the index.html from a url
   win.loadURL('http://localhost:3000');
-
-  // Open the DevTools.
   win.webContents.openDevTools()
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
 app.whenReady().then(createWindow)
 
 // Quit when all windows are closed, except on macOS. There, it's common
