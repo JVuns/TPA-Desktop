@@ -1,12 +1,15 @@
 import { addDoc, collection } from "firebase/firestore/lite"
 import { db } from "../firebase_setup/firebase"
 
-const handleSubmit = (testdata) => {
-    const ref = collection(db, "test_data") // Firebase creates this automatically
+const handleSubmit = (username, password) => {
+    const ref = collection(db, "credential") // Firebase creates this automatically
 
     let data = {
-        testData: testdata
+        username: username,
+        password: password
     }
+
+    console.log(data.username);
 
     try {
         addDoc(ref, data)
