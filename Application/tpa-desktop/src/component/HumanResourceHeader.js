@@ -40,7 +40,13 @@ const HumanResourceHeader = () =>{
 
         nav('/human-resource/salary-change-request')
     }
+    
+    const viewRequest = () => {
+        
+        //leave request
 
+        nav('/human-resource/view-request')
+    }
     return(
 
     <div className="row">
@@ -49,6 +55,7 @@ const HumanResourceHeader = () =>{
         <button onClick={issueWarningLetter}>Issue Warning Letter</button>
         <button onClick={viewEmployee}>View Employee</button>
         <button onClick={addEmployee}>Add Employee</button>
+        <button onClick={viewRequest}>View Request</button>
         <Header/>
     </div>
 

@@ -52,6 +52,7 @@ function AddEmployee (){
             console.log(username);
             handleEmployee(username, password, roleId, email, address, BOD, salary, status, shift)
             register(email, password)
+            alert("Successfully Add a New Employee")
         }else{
             console.log("Some are empty");
         }

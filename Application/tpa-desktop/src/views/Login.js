@@ -21,31 +21,31 @@ function App() {
         sessionStorage.setItem('LoggedInUser', userCred.user)
         let currentRole;
         employees.map((employee) => {
-          if(auth.currentUser.email.toLocaleLowerCase() == employee.employeeEmail.toLocaleLowerCase()){
+          if(auth.currentUser.email.toLocaleLowerCase() === employee.employeeEmail.toLocaleLowerCase()){
             currentRole = employee.employeeRoleId
           }
         });
         if(currentRole == "Manager"){
           nav('/human-resource')
-        }else if(currentRole == "Promotion"){
+        }else if(currentRole === "Promotion"){
+          nav('/promotion/dashboard')
+        }else if(currentRole === "Front"){
           // 
-        }else if(currentRole == "Front"){
+        }else if(currentRole === "Kitchen"){
           // 
-        }else if(currentRole == "Kitchen"){
+        }else if(currentRole === "Schedule"){
           // 
-        }else if(currentRole == "Schedule"){
+        }else if(currentRole === "Operation"){
           // 
-        }else if(currentRole == "Operation"){
+        }else if(currentRole === "External"){
           // 
-        }else if(currentRole == "External"){
+        }else if(currentRole === "Admin"){
           // 
-        }else if(currentRole == "Admin"){
+        }else if(currentRole === "Storage"){
           // 
-        }else if(currentRole == "Storage"){
+        }else if(currentRole === "Accounting"){
           // 
-        }else if(currentRole == "Accounting"){
-          // 
-        }else if(currentRole == "HumanResource"){
+        }else if(currentRole === "HumanResource"){
           // 
         }
       });

@@ -60,6 +60,31 @@
   flex-wrap: wrap;
 }
 
+.reject{
+  float: right;
+  margin-right: 0;
+  width: 15em;
+  border-style: none;
+  color: red;
+}
+
+.small-area{
+  margin: 5em;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.accept{
+  float: right;
+  margin-right: 0;
+  width: 15em;
+  border-style: none;
+  color: green;
+}
+
 .font-large{
   font-size: 20px;
 }

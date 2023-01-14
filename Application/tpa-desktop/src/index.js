@@ -12,6 +12,9 @@ import HumanResourceViewEmployee from './views/HumanResourceViewEmployee';
 import HumanResourceEmployeeDetail from './views/HumanResourceEmployeeDetail';
 import HumanResourceIssueWarningLetter from './views/HumanResourceIssueWarningLetter';
 import HumanResourceSalaryAdjustment from './views/HumanResourceSalaryAdjustment';
+import HumanResourceViewRequest from './views/HumanResourceViewRequest';
+import PromotionCreateEvent from './views/PromotionCreateEvent';
+import PromotionDashboard from './views/PromotionDashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -27,6 +30,9 @@ root.render(
             <Route exact path='/human-resource/employee-detail' element = {<HumanResourceEmployeeDetail/>}></Route>
             <Route exact path='/human-resource/issue-warning-letter' element = {<HumanResourceIssueWarningLetter/>}></Route>
             <Route exact path='/human-resource/salary-adjustment' element = {<HumanResourceSalaryAdjustment/>}></Route>
+            <Route exact path='/human-resource/view-request' element = {<HumanResourceViewRequest/>}></Route>
+            <Route exact path='/promotion/create-event' element = {<PromotionCreateEvent/>}></Route>
+            <Route exact path='/promotion/dashboard' element = {<PromotionDashboard/>}></Route>
             <Route exact path='/request/fund' element = {<FundRequest/>}></Route>
             <Route exact path='/request/leave' element = {<LeaveRequest/>}></Route>
             <Route exact path='/report/item' element = {<EmployeeReportItem/>}></Route>
